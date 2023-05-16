@@ -1,14 +1,91 @@
-/* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-html {
-  font-family: sans-serif;
+body {
+  background-color: rgba(128, 128, 128, 0.148);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(30, 29, 29);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 10px 0;
+}
+
+img {
+  width: 100%;
+  padding-right: 20px;
+}
+
+p {
+  text-align: justify;
 }
 
 .container {
-  max-width: 20rem;
+  display: flex;
+  align-items: center;
+  max-width: 50rem;
+  margin-top: 70px;
+  margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.foto {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+.registr {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.home_page {
+  width: 50%;
+}
+
+div.registr img {
+  margin-bottom: 15px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 0 0 0 20px;
+
+}
+
+footer.footer a {
+  font-weight: bolder;
+  color: green;
+  margin: 5px;
 }
