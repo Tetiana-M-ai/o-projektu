@@ -4,72 +4,70 @@
   box-sizing: border-box;
 }
 
-body {
+.container {
   background-color: rgba(128, 128, 128, 0.148);
-
   display: flex;
   flex-direction: column;
 }
 
-.header {
+header {
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   background-color: rgb(30, 29, 29);
 }
 
 a {
-  color: white;
+  color: orange;
   text-decoration: none;
-  margin-left: 20px;
+  margin: 0 20px;
 }
 
 h1 {
   display: flex;
   justify-content: center;
-  margin: 30px 0 10px 0;
+}
+
+p {
+  margin-left: 20px;
+  text-align: justify;
+}
+
+.info_project {
+  display: flex;
+  align-items: center;
+  max-width: 40rem;
+  margin: 70px auto 50px;
+}
+
+.foto_project {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
 }
 
 img {
   width: 100%;
-  padding-right: 20px;
 }
 
-p {
-  text-align: justify;
-}
-
-.container {
+.foto_left {
   display: flex;
-  align-items: center;
-  max-width: 50rem;
-  margin-top: 70px;
-  margin-bottom: 50px;
-  margin-right: auto;
-  margin-left: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 20px 0 0;
 }
 
-.foto {
+.foto_right {
   display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
-}
-
-.registr {
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
-  margin-left: 20px;
-}
-
-.home_page {
-  width: 50%;
-}
-
-div.registr img {
-  margin-bottom: 15px;
 }
 
 footer {
@@ -77,15 +75,50 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   background-color: white;
   padding: 0 0 0 20px;
 
 }
 
-footer.footer a {
+footer a {
   font-weight: bolder;
   color: green;
   margin: 5px;
+}
+
+
+/*informace o nas*/
+section {
+  display: flex;
+  align-items: center;
+  padding: 100px 15%;
+  overflow: auto;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+}
+
+.my_foto {
+  width: 250px;
+  border-radius: 50%;
+  float: left;
+  margin: 0 30px 0 0;
+  padding: 0;
+}
+
+.logo_git {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+
+div.logo_git img {
+  width: 20px;
 }
